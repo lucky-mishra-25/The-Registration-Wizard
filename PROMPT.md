@@ -1,145 +1,27 @@
-# 🧠 Project Prompt – Multi-Step Registration Wizard
+The UI: Build a form that is broken into 3 separate views/components:
 
-## 📌 Objective
+Step 1: Personal Info (First Name, Last Name, Date of Birth).
 
-Build a fully functional and stylish **Multi-Step Registration Form** with a dynamic progress bar using:
+Step 2: Account Details (Email, Password, Confirm Password).
 
-- HTML
-- CSS
-- Vanilla JavaScript
+Step 3: Review & Submit (Display all entered data so the user can check it).
 
-The form should guide users through multiple levels and visually indicate their progress.
+The Navigation: Add "Next" and "Back" buttons to move between steps.
 
----
+The State: Use React State (useState) in a Parent component to hold the data from all 3 steps. If I type my name in Step 1, go to Step 2, and click "Back", my name should still be there!
 
-## 🎯 Requirements
+Submission: On Step 3, clicking "Submit" should console.log() the final data object and show a "Success!" screen.
 
-### 1️⃣ Multi-Step Form Structure
+Real-Time Validation: Don't wait for the user to click "Submit" to tell them they made a mistake.
 
-The form must contain **three levels**:
+If the email doesn't have an @ symbol, show a red error text below the input as they type.
 
-### 🔹 Level 1 – Personal Information
-- Full Name
-- Email Address
-- Password
+Password must be at least 8 characters.
 
-### 🔹 Level 2 – Address Information
-- Address
-- City
-- Country
+"Confirm Password" must exactly match "Password".
 
-### 🔹 Level 3 – Confirmation
-- Display entered data
-- Submit button
+Disabled Buttons: The "Next" button should be disabled (unclickable) until all fields in the current step are valid.
 
-Only one level should be visible at a time.
+UX Toggle: Add a "Show/Hide Password" eyeball icon inside the password inputs.
 
----
-
-### 2️⃣ Navigation Controls
-
-- Next button
-- Previous button
-- Submit button (on final step)
-- Prevent skipping steps
-- Basic input validation before proceeding
-
----
-
-### 3️⃣ Progress Bar
-
-- Must visually show current progress
-- Should update dynamically when clicking:
-  - Next
-  - Previous
-- Smooth animation required
-- Active step indicator
-
-Progress width formula:
-
-```
-(currentStep / totalSteps) * 100
-```
-
----
-
-### 4️⃣ Styling Requirements
-
-- Modern card layout
-- Rounded corners
-- Soft shadows
-- Responsive design
-- Centered form on screen
-- Smooth transitions between steps
-- Clean and professional UI
-
----
-
-### 5️⃣ JavaScript Logic
-
-Your script must:
-
-- Track current step
-- Add/remove `active` class
-- Control button visibility
-- Validate inputs
-- Update progress bar width dynamically
-
----
-
-## 🛠 Technical Constraints
-
-- No frameworks (No React, Vue, Bootstrap, etc.)
-- Pure HTML, CSS, JavaScript
-- Code must be clean and readable
-- Organized into separate files:
-  - index.html
-  - style.css
-  - script.js
-
----
-
-## ⭐ Bonus (Optional Enhancements)
-
-- Add step indicators (1, 2, 3 circles)
-- Animate transitions
-- Show error messages
-- Add success message after submission
-- Add dark mode toggle
-
----
-
-## 🧩 Expected Outcome
-
-A professional-looking, fully functional multi-step registration wizard with:
-
-- Clean UI
-- Working navigation
-- Animated progress bar
-- Responsive design
-- Proper validation
-
----
-
-## 📦 Deliverables
-
-- Source code files
-- README.md
-- prompt.md
-- Screenshot or GIF preview (optional)
-
----
-
-## 🚀 Goal
-
-Create a production-ready multi-step form that demonstrates:
-
-- DOM manipulation
-- Event handling
-- UI/UX design skills
-- Clean code structure
-- Basic front-end engineering practices
-
----
-
-Happy Coding 💻✨
+Progress Bar: Add a visual progress bar at the top (e.g., "Step 2 of 3").
