@@ -107,5 +107,5 @@ MIT License
 
 ## Author
 
-Your Name  
-GitHub: https://github.com/your-username
+Lucky Mishra
+GitHub: [https://github.com/your-username](https://github.com/lucky-mishra-25/The-Registration-Wizard.git)
