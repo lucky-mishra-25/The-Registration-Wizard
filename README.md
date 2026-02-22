@@ -1,16 +1,214 @@
-# React + Vite
+git add README.md# 🚀 Multi-Step Registration Wizard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stylish multi-step registration form with a progress bar built using HTML, CSS, and JavaScript.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## React Compiler
+- ✅ Step-by-step form navigation  
+- ✅ Animated progress bar  
+- ✅ Responsive design  
+- ✅ Form validation  
+- ✅ Clean and modern UI  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+registration-wizard/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+---
+
+## 🛠 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+---
+
+## 📋 Form Steps
+
+### 🔹 Level 1 – Personal Information
+- Full Name  
+- Email Address  
+- Password  
+
+### 🔹 Level 2 – Address Information
+- Address  
+- City  
+- Country  
+
+### 🔹 Level 3 – Confirmation
+- Review Details  
+- Submit Form  
+
+---
+
+## 🎨 Progress Bar Logic
+
+The progress bar updates dynamically when:
+- Clicking **Next**
+- Clicking **Previous**
+
+JavaScript controls:
+- Step activation
+- Progress width calculation
+- Form validation
+
+---
+
+## ▶️ How to Run
+
+1. Download or clone the project:
+   ```bash
+   git clone https://github.com/your-username/registration-wizard.git
+   ```
+
+2. Open `index.html` in your browser.
+
+---
+
+## 🧠 How It Works
+
+- Each step is wrapped inside a `.step` container.
+- Only one step is visible at a time.
+- Active steps receive the `active` class.
+- Progress bar width is calculated based on:
+  
+  ```
+  (currentStep / totalSteps) * 100
+  ```
+
+---
+
+## 📸 Preview
+
+Modern card-based layout with smooth transitions and animated progress indicator.
+
+---
+
+## 📄 License
+
+This project is open-source and free to use.
+
+---
+
+## ✨ Author
+
+Created with ❤️ for learning and practice.
+# 🚀 Multi-Step Registration Wizard
+
+A stylish multi-step registration form with a progress bar built using HTML, CSS, and JavaScript.
+
+---
+
+## 📌 Features
+
+- ✅ Step-by-step form navigation  
+- ✅ Animated progress bar  
+- ✅ Responsive design  
+- ✅ Form validation  
+- ✅ Clean and modern UI  
+
+---
+
+## 📂 Project Structure
+
+```
+registration-wizard/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+---
+
+## 🛠 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+---
+
+## 📋 Form Steps
+
+### 🔹 Level 1 – Personal Information
+- Full Name  
+- Email Address  
+- Password  
+
+### 🔹 Level 2 – Address Information
+- Address  
+- City  
+- Country  
+
+### 🔹 Level 3 – Confirmation
+- Review Details  
+- Submit Form  
+
+---
+
+## 🎨 Progress Bar Logic
+
+The progress bar updates dynamically when:
+- Clicking **Next**
+- Clicking **Previous**
+
+JavaScript controls:
+- Step activation
+- Progress width calculation
+- Form validation
+
+---
+
+## ▶️ How to Run
+
+1. Download or clone the project:
+   ```bash
+   git clone https://github.com/your-username/registration-wizard.git
+   ```
+
+2. Open `index.html` in your browser.
+
+---
+
+## 🧠 How It Works
+
+- Each step is wrapped inside a `.step` container.
+- Only one step is visible at a time.
+- Active steps receive the `active` class.
+- Progress bar width is calculated based on:
+  
+  ```
+  (currentStep / totalSteps) * 100
+  ```
+
+---
+
+## 📸 Preview
+
+Modern card-based layout with smooth transitions and animated progress indicator.
+
+---
+
+## 📄 License
+
+This project is open-source and free to use.
+
+---
+
+## ✨ Author
+
+Created with ❤️ for learning and practice.
