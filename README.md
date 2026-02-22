@@ -1,214 +1,111 @@
-git add README.md# 🚀 Multi-Step Registration Wizard
+# Multi-Step Registration Wizard (React)
 
-A stylish multi-step registration form with a progress bar built using HTML, CSS, and JavaScript.
-
----
-
-## 📌 Features
-
-- ✅ Step-by-step form navigation  
-- ✅ Animated progress bar  
-- ✅ Responsive design  
-- ✅ Form validation  
-- ✅ Clean and modern UI  
+A simple multi-step registration form built using React with a dynamic progress bar and step navigation.
 
 ---
 
-## 📂 Project Structure
+## Features
 
-```
-registration-wizard/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
----
-
-## 🛠 Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-
----
-
-## 📋 Form Steps
-
-### 🔹 Level 1 – Personal Information
-- Full Name  
-- Email Address  
-- Password  
-
-### 🔹 Level 2 – Address Information
-- Address  
-- City  
-- Country  
-
-### 🔹 Level 3 – Confirmation
-- Review Details  
-- Submit Form  
-
----
-
-## 🎨 Progress Bar Logic
-
-The progress bar updates dynamically when:
-- Clicking **Next**
-- Clicking **Previous**
-
-JavaScript controls:
-- Step activation
-- Progress width calculation
+- Multi-step form
+- Progress bar
+- React Hooks (useState)
 - Form validation
+- Responsive design
+- Clean and minimal UI
 
 ---
 
-## ▶️ How to Run
+## Tech Stack
 
-1. Download or clone the project:
-   ```bash
-   git clone https://github.com/your-username/registration-wizard.git
-   ```
-
-2. Open `index.html` in your browser.
+- React
+- JavaScript (ES6+)
+- CSS
 
 ---
 
-## 🧠 How It Works
-
-- Each step is wrapped inside a `.step` container.
-- Only one step is visible at a time.
-- Active steps receive the `active` class.
-- Progress bar width is calculated based on:
-  
-  ```
-  (currentStep / totalSteps) * 100
-  ```
-
----
-
-## 📸 Preview
-
-Modern card-based layout with smooth transitions and animated progress indicator.
-
----
-
-## 📄 License
-
-This project is open-source and free to use.
-
----
-
-## ✨ Author
-
-Created with ❤️ for learning and practice.
-# 🚀 Multi-Step Registration Wizard
-
-A stylish multi-step registration form with a progress bar built using HTML, CSS, and JavaScript.
-
----
-
-## 📌 Features
-
-- ✅ Step-by-step form navigation  
-- ✅ Animated progress bar  
-- ✅ Responsive design  
-- ✅ Form validation  
-- ✅ Clean and modern UI  
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```
-registration-wizard/
+src/
 │
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+├── components/
+│   ├── StepOne.jsx
+│   ├── StepTwo.jsx
+│   ├── StepThree.jsx
+│   └── ProgressBar.jsx
+│
+├── App.jsx
+├── main.jsx
+└── styles.css
 ```
 
 ---
 
-## 🛠 Technologies Used
+## How It Works
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
+- `useState` manages:
+  - Current step
+  - Form data
+- Components render conditionally based on the current step.
+- The progress bar updates dynamically as the user navigates.
 
----
+Example:
 
-## 📋 Form Steps
+```js
+const [step, setStep] = useState(1);
 
-### 🔹 Level 1 – Personal Information
-- Full Name  
-- Email Address  
-- Password  
-
-### 🔹 Level 2 – Address Information
-- Address  
-- City  
-- Country  
-
-### 🔹 Level 3 – Confirmation
-- Review Details  
-- Submit Form  
+const nextStep = () => {
+  setStep(step + 1);
+};
+```
 
 ---
 
-## 🎨 Progress Bar Logic
+## Installation
 
-The progress bar updates dynamically when:
-- Clicking **Next**
-- Clicking **Previous**
+1. Clone the repository:
 
-JavaScript controls:
-- Step activation
-- Progress width calculation
-- Form validation
+```bash
+git clone https://github.com/your-username/registration-wizard.git
+```
 
----
+2. Install dependencies:
 
-## ▶️ How to Run
+```bash
+npm install
+```
 
-1. Download or clone the project:
-   ```bash
-   git clone https://github.com/your-username/registration-wizard.git
-   ```
+3. Run the project:
 
-2. Open `index.html` in your browser.
+If using Vite:
+```bash
+npm run dev
+```
 
----
-
-## 🧠 How It Works
-
-- Each step is wrapped inside a `.step` container.
-- Only one step is visible at a time.
-- Active steps receive the `active` class.
-- Progress bar width is calculated based on:
-  
-  ```
-  (currentStep / totalSteps) * 100
-  ```
+If using Create React App:
+```bash
+npm start
+```
 
 ---
 
-## 📸 Preview
+## Deployment
 
-Modern card-based layout with smooth transitions and animated progress indicator.
+You can deploy using:
 
----
-
-## 📄 License
-
-This project is open-source and free to use.
+- Vercel
+- Netlify
+- GitHub Pages
 
 ---
 
-## ✨ Author
+## License
 
-Created with ❤️ for learning and practice.
+MIT License
+
+---
+
+## Author
+
+Your Name  
+GitHub: https://github.com/your-username
